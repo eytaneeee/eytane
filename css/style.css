@@ -1978,7 +1978,7 @@ img.svg{
 
 @media (max-width: 1200px) {
 	.lexal_tm_about_wrap{flex-direction: column;}
-	.lexal_tm_about_wrap .img_box{display: none;}
+	.lexal_tm_about_wrap .img_box{padding-bottom: 50px;}
 	.lexal_tm_about_wrap .description_box{width: 100%;padding-left: 0px;}
 	.lexal_tm_about_wrap{margin-bottom: 78px;}
 	.lexal_tm_services ul li{width: 50%;}
