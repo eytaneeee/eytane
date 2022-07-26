@@ -1,0 +1,2041 @@
+@charset "utf-8";
+/*
+/*	Copyright (c) 2018 Marketify
+/*	Author: Marketify
+/*	This file is made for CURRENT TEMPLATE
+
+
+01) LEXAL BASE
+02) LEXAL ABOUT
+03) LEXAL SERVICES
+04) LEXAL PROJECTS
+05) LEXAL NEWS
+06) LEXAL CONTACT
+07) LEXAL KENBURN HOMEPAGE
+08) LEXAL RIPPLE HOMEPAGE
+09) LEXAL TEXT HOMEPAGE
+10) LEXAL NEWS LIST
+11) LEXAL NEWS SINGLE
+12) LEXAL PORTFOLIO SINGLE
+13) LEXAL MEDIA QUERIES (FOR SMALL DEVIVES)
+
+
+/*---------------------------------------------------*/
+/*	01) LEXAL BASE
+/*---------------------------------------------------*/
+
+html {
+	overflow-x: hidden;
+	padding: 0px;
+	margin: 0px
+}
+body{
+	font-family: "Poppins";
+	font-size: 15px;
+	line-height: 2.2;
+	letter-spacing: 0.5px;
+	word-wrap: break-word;
+	font-weight: 400;
+	background-color: #090909;
+	color: #fff;
+}
+svg{
+	fill: currentcolor;
+	width: 15px;
+	height: 15px;
+}
+img.svg{
+	width: 15px;
+	height: 15px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #FFFFFF;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #FFFFFF;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #FFFFFF;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #FFFFFF;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #FFFFFF;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color: #FFFFFF;
+}
+
+.lexal_tm_loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 11111111;
+}
+.lexal_tm_loader-wrapper .loader {
+    height: 1px;
+    background-color: #fff;
+    z-index: 11111111;
+	position: absolute;
+}
+.lexal_tm_all_wrap,
+.lexal_tm_all_wrap *{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.lexal_tm_all_wrap{
+	width: 100%;
+	min-height: 100vh;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.lexal_tm_wrap_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 0px 45px 45px 45px;
+}
+.lexal_tm_section{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.lexal_tm_content{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 45px;
+}
+.lexal_tm_border{
+	position: fixed;
+	z-index: 10;
+	background-color: #000000;
+}
+.lexal_tm_border.left{
+	width: 45px;
+	height: 100%;
+	left: 0px;
+}
+.lexal_tm_border.right{
+	width: 45px;
+	height: 100%;
+	right: 0px;
+}
+.lexal_tm_border.top{
+	width: 100%;
+	height: 45px;
+	top: 0px;
+}
+.lexal_tm_border.bottom{
+	width: 100%;
+	height: 45px;
+	bottom: 0px;
+}
+.lexal_tm_border.top .header_wrap{
+	width: 100%;
+	height: 100%;
+	padding: 0px 45px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.lexal_tm_border.top .header_wrap .logo_image{
+	max-height: 40px;
+	display: flex;
+	align-items: center;
+	width: auto;
+	float: left;
+}
+.lexal_tm_border.top .header_wrap .logo_image img{max-height: 40px;}
+.lexal_tm_border.top .header_wrap .logo a{
+	text-decoration: none;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.lexal_tm_border.top .header_wrap .logo a h3{
+	font-size: 23px;
+	letter-spacing: 4px;
+	font-weight: 700;
+}
+.lexal_tm_border.top .trigger{
+	width: 30px;
+	height: 12px;
+	position: relative;
+}
+.lexal_tm_border.top .trigger a{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+.lexal_tm_border.top .trigger span{
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background-color: #FFFFFF;
+	display: inline-block;
+}
+.lexal_tm_border.top .trigger .two{margin-top: 12px;}
+.lexal_tm_border.bottom .footer_wrap{
+	width: 100%;
+	height: 100%;
+	padding: 0px 45px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.lexal_tm_border.bottom .footer_wrap .copyright p{font-family: "Saira";}
+.lexal_tm_border.bottom .footer_wrap .social ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.lexal_tm_border.bottom .footer_wrap .social ul li{
+	margin: 0px 8px 0px 0px;
+	float: left;
+}
+.lexal_tm_border.bottom .footer_wrap .social ul li:last-child{margin-right: 0px;}
+.lexal_tm_border.bottom .footer_wrap .social ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_border.bottom .footer_wrap .social ul li a:hover{color: #E9204F;}
+.lexal_tm_menu{
+	width: 400px;
+	height: 100vh;
+	background-color: #000;
+	position: fixed;
+	right: -355px;
+	z-index: 9;
+}
+.lexal_tm_menu .nav_list{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	padding-right: 45px;
+}
+.lexal_tm_menu .nav_list ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.lexal_tm_menu .nav_list ul li{
+	margin: 0px;
+	list-style-type: none;
+}
+.lexal_tm_menu .nav_list ul li:last-child{margin-bottom: 0px;}
+.lexal_tm_menu .nav_list ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 700;
+	padding-bottom: 2px;
+	display: inline-block;
+	font-family: "Saira";
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_menu .nav_list ul li a:hover{color: #E9204F;}
+.lexal_tm_home_hero{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
+}
+.lexal_tm_home_hero .image{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transform: scale(1.2,1.2);
+	opacity: 0;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+	transition-delay: .7s;
+}
+.lexal_tm_home_hero .image.animate{
+	transform: scale(1,1);
+	transform: translateZ(0);
+	opacity: 1;
+}
+.lexal_tm_home_hero .overlay{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgba(0,0,0,.7);
+}
+.lexal_tm_home_hero .overlay_texts{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	width: 100%;
+	padding: 0px 50px;
+}
+.lexal_tm_home_hero .overlay_texts .name{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 53px;
+	line-height: 1.4;
+	
+	-webkit-clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+		clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+	-webkit-transition: 2s ease-in-out;
+		-o-transition: 2s ease-in-out;
+			transition: 2s ease-in-out;
+}
+.lexal_tm_home_hero .overlay_texts .name.animate{
+	-webkit-clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 50% 100%, 100% 100%, 100% 0%);
+		clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 50% 100%, 100% 100%, 100% 0%); 
+}
+.lexal_tm_home_hero .overlay_texts .subtitle{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 500;
+	font-family: "Saira";
+	
+	-webkit-clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+		clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+	-webkit-transition: 3s ease-in-out;
+		-o-transition: 3s ease-in-out;
+			transition: 3s ease-in-out;
+	transition-delay: .2s;
+}
+.lexal_tm_home_hero .overlay_texts .subtitle.animate{
+	-webkit-clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 50% 100%, 100% 100%, 100% 0%);
+		clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 50% 100%, 100% 100%, 100% 0%); 
+}
+.lexal_tm_home_hero .lexal_tm_down{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 14%;
+	opacity: 0;
+	
+	-webkit-transition: all .3s 2.5s ease;
+	   -moz-transition: all .3s 2.5s ease;
+	    -ms-transition: all .3s 2.5s ease;
+	     -o-transition: all .3s 2.5s ease;
+	        transition: all .3s 2.5s ease;
+}
+.lexal_tm_home_hero .lexal_tm_down.animate{
+	bottom: 10%;
+	opacity: 1;
+}
+.lexal_tm_home_hero .lexal_tm_down svg{
+	width: 35px !important;
+	height: 35px !important;
+}
+.lexal_tm_home_hero .lexal_tm_down svg #wheel{
+	animation: scroll ease 2s infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(60px);
+    }
+}
+
+/*---------------------------------------------------*/
+/*	02) LEXAL ABOUT
+/*---------------------------------------------------*/
+
+.lexal_tm_about_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	padding-top: 100px;
+	margin-bottom: 110px;
+}
+.lexal_tm_about_wrap .img_box{
+	width: 40%;
+	height: auto;
+	opacity: 0;
+	position: relative;
+	top: 50px;
+	
+	-webkit-transition: all .7s ease;
+	   -moz-transition: all .7s ease;
+	    -ms-transition: all .7s ease;
+	     -o-transition: all .7s ease;
+	        transition: all .7s ease;
+}
+
+.lexal_tm_about_wrap.lexal_tm_waypoint_effect2.load .img_box{
+	opacity: 1;
+	top: 0px;
+}
+.lexal_tm_about_wrap.lexal_tm_waypoint_effect2.load .description_box{opacity: 1;}
+.lexal_tm_about_wrap .lexal_tm_main_title.hero{
+	position: relative;
+	top: 20px;
+	opacity: 0;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_about_wrap.lexal_tm_waypoint_effect2.load .lexal_tm_main_title.hero{
+	top: 0px;
+	opacity: 1;
+}
+.lexal_tm_about_wrap .img_box .author_img{position: relative;}
+.lexal_tm_about_wrap .img_box .author_img img{min-width: 100%;}
+.lexal_tm_about_wrap .img_box .author_img .main_image{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url(..//img/about/1.jpg);
+}
+.lexal_tm_about_wrap .img_box .author_img:before{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	content: "";
+	border: 5px solid rgba(255,255,255,.2);
+	top: 10px;
+	left: 10px;
+}
+.lexal_tm_about_wrap .description_box{
+	width: 60%;
+	height:auto;
+	padding-left: 80px;
+	opacity: 0;
+	
+	-webkit-transition: all .7s ease;
+	   -moz-transition: all .7s ease;
+	    -ms-transition: all .7s ease;
+	     -o-transition: all .7s ease;
+	        transition: all .7s ease;
+}
+.lexal_tm_main_title{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	text-align: left;
+	padding-bottom: 90px;
+}
+.lexal_tm_main_title.hero{padding-bottom: 0px;}
+.lexal_tm_main_title span{
+	text-transform: uppercase;
+	color: #E9204F;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: "Saira";
+}
+.lexal_tm_about_wrap .main_info{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 27px;
+}
+.lexal_tm_about_wrap .main_info p{
+	margin-bottom: 11px;
+	color: #999;
+	opacity: 0;
+	line-height: 3;
+	
+	-webkit-transition: all .7s ease;
+	   -moz-transition: all .7s ease;
+	    -ms-transition: all .7s ease;
+	     -o-transition: all .7s ease;
+	        transition: all .7s ease;
+}
+.lexal_tm_about_wrap.lexal_tm_waypoint_effect2.load .main_info p{
+	opacity: 1;
+	line-height: 2.2;
+}
+.lexal_tm_about_wrap .main_info .sign{
+	margin-bottom: 33px;
+	padding-top: 11px;
+}
+.lexal_tm_button{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.lexal_tm_button a{
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	background-color: #fff;
+	padding: 8px 40px;
+	border-radius: 3px;
+	font-family: "Saira";
+	font-weight: 500;
+	position: relative;
+	overflow: hidden;
+}
+.lexal_tm_button.news{text-align: center;}
+.lexal_tm_button.news a{width: 100%;}
+
+/*---------------------------------------------------*/
+/*	03) LEXAL SERVICES
+/*---------------------------------------------------*/
+
+
+.lexal_tm_services.lexal_tm_waypoint_effect.load ul li{
+	opacity: 1;
+	top: 0px;
+}
+.lexal_tm_services{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 40px;
+}
+.lexal_tm_services ul{
+	margin: 0px 0px 0px -50px;
+	list-style-type: none;
+}
+.lexal_tm_services ul li{
+	margin: 0px 0px 50px 0px;
+	padding-left: 50px;
+	float: left;
+	width: 33.3333%;
+	opacity: 0;
+	position: relative;
+	top: 30px;
+	
+	-webkit-transition: all .7s ease;
+	   -moz-transition: all .7s ease;
+	    -ms-transition: all .7s ease;
+	     -o-transition: all .7s ease;
+	        transition: all .7s ease;
+}
+.lexal_tm_services ul li .inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	background-color: rgba(0,0,0,1.00);
+	padding: 50px 40px;
+	border-radius: 3px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.lexal_tm_services ul li .inner:before{
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 3px;
+	background-color: #E9204F;
+	left: 50%;
+	bottom: 0px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_services ul li .inner:hover:before{width: 50%;}
+.lexal_tm_services ul li .inner:after{
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 3px;
+	background-color: #E9204F;
+	right: 50%;
+	bottom: 0px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_services ul li .inner:hover:after{width: 50%;}
+.lexal_tm_services ul li .inner .svg{
+	width: 40px;
+	height: 40px;
+	color: #E9204F;
+}
+.lexal_tm_services ul li .inner h3{
+	font-size: 22px;
+	margin-bottom: 14px;
+}
+.lexal_tm_services ul li .inner p{color: #999;}
+
+/*---------------------------------------------------*/
+/*	04) LEXAL PROJECTS
+/*---------------------------------------------------*/
+
+.lexal_tm_projects_wrap.lexal_tm_waypoint_effect.load .lexal_tm_portfolio_list > li{
+	opacity: 1;
+	top: 0px;
+}
+.lexal_tm_projects_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 80px;
+}
+.lexal_tm_portfolio_list{
+	list-style-type:none;
+	margin: 0px 0px 50px -50px;
+}
+.lexal_tm_portfolio_list > li{
+	width:33.3333%;
+	float:left;
+	position:relative;
+	margin: 0px 0px 50px 0px;
+	padding-left: 50px;
+	top: 30px;
+	opacity: 0;
+	
+	-webkit-transition: all .7s ease;
+	   -moz-transition: all .7s ease;
+	    -ms-transition: all .7s ease;
+	     -o-transition: all .7s ease;
+	        transition: all .7s ease;
+}
+.lexal_tm_portfolio_list .list_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.lexal_tm_portfolio_list .list_inner .image_wrap{
+	position: relative;
+	top: 0px;
+}
+.lexal_tm_portfolio_list .list_inner .image_wrap .main_image{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translateZ(0);
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_portfolio_list .list_inner .overlay{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+	background-color: rgba(233,32,79,.92);
+	opacity: 0;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_portfolio_list .list_inner .overlay_text{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	z-index: 2;
+	opacity: 0;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_portfolio_list .list_inner .full_link{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 3;
+}
+.lexal_tm_portfolio_list .list_inner .overlay_text h3{font-size: 22px;}
+.lexal_tm_portfolio_list .list_inner .overlay_text span{font-family: "Saira";}
+.lexal_tm_portfolio_list .list_inner:hover .main_image{transform: scale(1.2,1.2);	}
+.lexal_tm_portfolio_list .list_inner:hover .overlay{opacity: 1;}
+.lexal_tm_portfolio_list .list_inner:hover .overlay_text{opacity: 1;}
+.lexal_tm_load_more{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	text-align: center;
+}
+.lexal_tm_load_more a{
+	text-decoration: none;
+    color: #000;
+    display: inline-block;
+    background-color: #fff;
+    padding: 8px 40px;
+    border-radius: 3px;
+    font-family: "Saira";
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+.lexal_tm_load_more a span{color: #000000;}
+.lexal_tm_load_more a span.change{color: #fff;}
+.lexal_tm_load_more .inner{position: relative;}
+.lexal_tm_load_more .svg{
+	width: 55px;
+	height: 55px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+}
+.lexal_tm_load_more .svg.animate{opacity: 1;}
+.lexal_tm_load_more.stop a{cursor: crosshair;}
+.lexal_tm_load_more a.opened{color: #fff;}
+
+/*---------------------------------------------------*/
+/*	05) LEXAL NEWS
+/*---------------------------------------------------*/
+
+.lexal_tm_news_wrap.lexal_tm_waypoint_effect.load ul li{
+	opacity: 1;
+	top: 0px;
+}
+.lexal_tm_news_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 40px;
+}
+.lexal_tm_news_wrap ul{
+	margin: 0px 0px 0px -50px;
+	list-style-type: none;
+}
+.lexal_tm_news_wrap ul li{
+	margin: 0px 0px 50px 0px;
+	width: 33.3333%;
+	float: left;
+	padding-left: 50px;
+	position: relative;
+	top: 30px;
+	opacity: 0;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_news_wrap ul li .inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	background-color: rgba(0,0,0,1.00);
+}
+.lexal_tm_news_wrap ul li .inner .image_wrap{position: relative;}
+.lexal_tm_news_wrap ul li .inner .image_wrap img{min-width: 100%;}
+.lexal_tm_news_wrap ul li .inner .image_wrap .main_image{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.lexal_tm_news_wrap ul li .inner .image_wrap .full_link{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+}
+.lexal_tm_news_wrap ul li .inner .descriptions_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 30px 40px 50px 40px;
+	position: relative;
+}
+.lexal_tm_news_wrap ul li .inner .descriptions_wrap:before{
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 3px;
+	background-color: #E9204F;
+	left: 50%;
+	bottom: 0px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_news_wrap ul li .inner:hover .descriptions_wrap:before{width: 50%;}
+.lexal_tm_news_wrap ul li .inner .descriptions_wrap:after{
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 3px;
+	background-color: #E9204F;
+	right: 50%;
+	bottom: 0px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_news_wrap ul li .inner:hover .descriptions_wrap:after{width: 50%;}
+.lexal_tm_news_wrap ul li .inner .descriptions_wrap .date_wrap span{
+	color: #fff;
+	line-height: 1.7;
+	display: inline-block;
+	font-family: "Saira";
+}
+.lexal_tm_news_wrap ul li .inner .descriptions_wrap .date_wrap span a{
+	text-decoration: none;
+	color: #fff;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_news_wrap ul li .inner .descriptions_wrap .date_wrap span a:hover{color: #E9204F;}
+.lexal_tm_news_wrap ul li .inner .descriptions_wrap .title{margin-bottom: 14px;}
+.lexal_tm_news_wrap ul li .inner .descriptions_wrap .title a{
+	text-decoration: none;
+	color: #FFFFFF;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_news_wrap ul li .inner .descriptions_wrap .title a:hover{color: #E9204F;}
+.lexal_tm_news_wrap ul li .inner .descriptions_wrap .title h3{font-size: 22px;}
+.lexal_tm_news_wrap ul li .inner .descriptions_wrap .text{margin-bottom: 23px;}
+.lexal_tm_news_wrap ul li .inner .descriptions_wrap .text p{color: #999;}
+
+/*---------------------------------------------------*/
+/*	06) LEXAL CONTACT
+/*---------------------------------------------------*/
+
+.lexal_tm_contact_wrap.lexal_tm_waypoint_effect.load .leftpart{
+	opacity: 1;
+	top: 0px;
+}
+.lexal_tm_contact_wrap.lexal_tm_waypoint_effect.load .rightpart{
+	opacity: 1;
+	top: 0px;
+}
+.lexal_tm_contact_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	margin-bottom: 90px;
+}
+.lexal_tm_contact_wrap .leftpart{
+	width: 40%;
+	height: auto;
+	padding-right: 20px;
+	position: relative;
+	opacity: 0;
+	top: 30px;
+	
+	-webkit-transition: all .7s ease;
+	   -moz-transition: all .7s ease;
+	    -ms-transition: all .7s ease;
+	     -o-transition: all .7s ease;
+	        transition: all .7s ease;
+}
+.lexal_tm_contact_wrap .leftpart ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.lexal_tm_contact_wrap .leftpart ul li{
+	margin: 0px 0px 14px 0px;
+	width: 100%;
+	float: left;
+}
+.lexal_tm_contact_wrap .leftpart ul li:last-child{margin-bottom: 0px;}
+.lexal_tm_contact_wrap .leftpart ul li .inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.lexal_tm_contact_wrap .leftpart ul li span{
+	padding-left: 35px;
+	font-family: "Saira";
+	display: inline-block;
+}
+.lexal_tm_contact_wrap .leftpart ul li span a{
+	color: #fff;
+	text-decoration: none;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_contact_wrap .leftpart ul li span a:hover{color: #E9204F;}
+.lexal_tm_contact_wrap .leftpart ul li .svg{
+	position: absolute;
+	left: 0px;
+	width: 20px;
+	height: 20px;
+	top: 5px;
+}
+.lexal_tm_contact_wrap .rightpart{
+	width: 60%;
+	position: relative;
+	margin-top: -17px;
+	top: 30px;
+	opacity: 0;
+	
+	-webkit-transition: all .7s ease;
+	   -moz-transition: all .7s ease;
+	    -ms-transition: all .7s ease;
+	     -o-transition: all .7s ease;
+	        transition: all .7s ease;
+}
+.lexal_tm_contact_wrap .contact_list_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.lexal_tm_contact_wrap .contact_list_wrap .first_row{
+	width: 100%;
+	float: left;
+	display: flex;
+	margin-bottom: 50px;
+}
+.lexal_tm_contact_wrap .contact_list_wrap .first_row .first{
+	padding-right: 20px;
+	width: 50%;
+}
+.lexal_tm_contact_wrap .contact_list_wrap .first_row .second{
+	padding-left: 20px;
+	width: 50%;
+}
+.lexal_tm_contact_wrap .contact_list_wrap .first_row .first input,
+.lexal_tm_contact_wrap .contact_list_wrap .first_row .second input{
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(255,255,255,.3);
+	color: #fff;
+	padding-left: 0px !important;
+	
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+.lexal_tm_contact_wrap .contact_list_wrap .first_row .first input:focus,
+.lexal_tm_contact_wrap .contact_list_wrap .first_row .second input:focus{
+	outline: none;
+	border-bottom-color: rgba(255,255,255,1)
+}
+.lexal_tm_contact_wrap .contact_list_wrap .second_row{
+	width: 100%;
+	float: left;
+	margin-bottom: 24px;
+}
+.lexal_tm_contact_wrap .contact_list_wrap .second_row textarea{
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(255,255,255,.3);
+	resize: none;
+	color: #fff;
+	padding-left: 0px !important;
+	height: 44px;
+	
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+.lexal_tm_contact_wrap .contact_list_wrap .second_row textarea:focus{
+	outline: none;
+	border-bottom-color: rgba(255,255,255,1)
+}
+.lexal_tm_contact_wrap .empty_notice{
+	color: #F52225;
+	margin-bottom: 7px;
+	display: none;
+	text-align: left;
+	font-weight: 500;
+}
+.lexal_tm_contact_wrap .contact_error{
+	color: #F52225;
+	text-align: left;
+	font-weight: 500;
+}
+.lexal_tm_contact_wrap .returnmessage{
+	color:#F52225;
+	margin-bottom: 7px;
+	text-align: left;
+	font-weight: 500;
+}
+.lexal_tm_main_title.contact{padding-bottom: 75px;}
+
+
+/*---------------------------------------------------*/
+/*	07) LEXAL KENBURN HOMEPAGE
+/*---------------------------------------------------*/
+
+.lexal_tm_home_hero .kenburn_wrap{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+/*---------------------------------------------------*/
+/*	08) LEXAL RIPPLE HOMEPAGE
+/*---------------------------------------------------*/
+
+.lexal_tm_home_hero.ripple_animation{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	background-image: url(..//img/background/1.jpg);
+}
+
+/*---------------------------------------------------*/
+/*	09) LEXAL TEXT HOMEPAGE
+/*---------------------------------------------------*/
+
+.lexal_tm_animation_text_word{
+	font-family: "Saira";
+	color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/*---------------------------------------------------*/
+/*	10) LEXAL NEWS LIST
+/*---------------------------------------------------*/
+
+.lexal_tm_flex_box{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	padding-top: 100px;
+	margin-bottom: 100px;
+}
+.lexal_tm_flex_box .flex_left{
+	width: 72%;
+	height: auto;
+}
+.lexal_tm_flex_box .flex_right{
+	width: 28%;
+	height: auto;
+	margin-left: 50px;
+}
+.lexal_tm_news_list_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.lexal_tm_news_list_wrap.lexal_tm_waypoint_effect.load ul li{
+	top: 0px;
+	opacity: 1;
+}
+.lexal_tm_news_list_wrap ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.lexal_tm_news_list_wrap ul li{
+	margin: 0px 0px 50px 0px;
+	width: 100%;
+	float: left;
+	position: relative;
+	top: 30px;
+	opacity: 0;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_news_list_wrap ul li .inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	background-color: rgba(0,0,0,1.00);
+}
+.lexal_tm_news_list_wrap ul li .inner .image_wrap{position: relative;}
+.lexal_tm_news_list_wrap ul li .inner .image_wrap img{min-width: 100%;}
+.lexal_tm_news_list_wrap ul li .inner .image_wrap .main_image{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.lexal_tm_news_list_wrap ul li .inner .image_wrap .full_link{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+}
+.lexal_tm_news_list_wrap ul li .inner .descriptions_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 30px 40px 50px 40px;
+	position: relative;
+}
+.lexal_tm_news_list_wrap ul li .inner .descriptions_wrap:before{
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 3px;
+	background-color: #E9204F;
+	left: 50%;
+	bottom: 0px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_news_list_wrap ul li .inner:hover .descriptions_wrap:before{width: 50%;}
+.lexal_tm_news_list_wrap ul li .inner .descriptions_wrap:after{
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 3px;
+	background-color: #E9204F;
+	right: 50%;
+	bottom: 0px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_news_list_wrap ul li .inner:hover .descriptions_wrap:after{width: 50%;}
+.lexal_tm_news_list_wrap ul li .inner .descriptions_wrap .date_wrap span{
+	color: #fff;
+	line-height: 1.7;
+	display: inline-block;
+	font-family: "Saira";
+}
+.lexal_tm_news_list_wrap ul li .inner .descriptions_wrap .date_wrap span a{
+	text-decoration: none;
+	color: #fff;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_news_list_wrap ul li .inner .descriptions_wrap .date_wrap span a:hover{color: #E9204F;}
+.lexal_tm_news_list_wrap ul li .inner .descriptions_wrap .title{margin-bottom: 14px;}
+.lexal_tm_news_list_wrap ul li .inner .descriptions_wrap .title a{
+	text-decoration: none;
+	color: #FFFFFF;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_news_list_wrap ul li .inner .descriptions_wrap .title a:hover{color: #E9204F;}
+.lexal_tm_news_list_wrap ul li .inner .descriptions_wrap .title h3{font-size: 22px;}
+.lexal_tm_news_list_wrap ul li .inner .descriptions_wrap .text{margin-bottom: 23px;}
+.lexal_tm_news_list_wrap ul li .inner .descriptions_wrap .text p{color: #999;}
+.lexal_tm_news_list_wrap .news_load_more_button{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.lexal_tm_news_list_wrap .news_load_more_button a{
+	text-decoration: none;
+    color: #000;
+    display: inline-block;
+    background-color: #fff;
+    padding: 8px 40px;
+	width: 100%;
+	text-align: center;
+    border-radius: 3px;
+    font-family: "Saira";
+    font-weight: 500;
+}
+.lexal_tm_sidebar_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.lexal_tm_sidebar_wrap .search_wrap{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+	margin-bottom: 37px;
+}
+.lexal_tm_sidebar_wrap .search_wrap input[type="text"]{
+	background-color: transparent;
+	border: 1px solid rgba(255,255,255,.2);
+	width: 100%;
+	color: #fff;
+	height: 50px;
+	padding-left: 15px !important;
+	padding-right: 40px !important;
+}
+.lexal_tm_sidebar_wrap .search_wrap input[type="text"]:focus{outline: none;}
+.lexal_tm_sidebar_wrap .search_wrap input[type="submit"]{
+	width: 40px;
+	height: 49px;
+	background-color: transparent;
+	text-transform: capitalize;
+	position: absolute;
+	top: 1px;
+	right: 0px;
+}
+.lexal_tm_sidebar_wrap .search_wrap input[type="submit"]:focus{outline: none;}
+.lexal_tm_sidebar_wrap .search_wrap .svg{
+	position: absolute;
+	top: 19px;
+	right: 15px;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap > ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap > ul > li{
+	margin: 0px 0px 37px 0px;
+	width: 100%;
+	float: left;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap > ul > li:last-child{margin-bottom: 0px;}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap > ul > li:nth-child(1){margin-bottom: 26px;}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap > ul > li:nth-child(4){margin-bottom: 32px;}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .title_holder{
+	width: 100%;
+	float: left;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .title_holder h3{
+	position: relative;
+	text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .title_holder h3:before{
+	position: absolute;
+	content: "";
+	width: 32px;
+	height: 2px;
+	background-color: #fff;
+	left: 0px;
+	bottom: -8px;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .author_image{
+	padding-top: 57px;
+	margin-bottom: 16px;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .description p{color: #999;}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 38px;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li{
+	margin: 0px 0px 30px 0px;
+	width: 100%;
+	float: left;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li:last-child{margin-bottom: 0px;}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li .inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li .title_date{
+	padding-left: 120px;
+	position: relative;
+	top: 6px;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li .title_date h3{font-size: 15px;			}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li .title_date h3 a{
+	text-decoration: none;
+	color: #999;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li:hover .title_date h3 a{color: #fff;}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li .title_date span{
+	font-family: "Saira";
+	font-size: 13px;color: #999;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li .post_image{
+	position: absolute;
+	width: 30%;
+	top: 0px;
+	left: 0px;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li .post_image .image{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li .lexal_tm_post_full_link{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 6;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list .overlay_post{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 2;
+	background-color: rgba(0,0,0,.5);
+	display: none;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .list_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 25px;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .list_wrap ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .list_wrap ul li{
+	margin: 0px 0px 15px 0px;
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .list_wrap ul li:last-child{margin-bottom: 0px;}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .list_wrap ul li .inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .list_wrap ul li .inner a{
+	text-decoration: none;
+	color: #999;
+	font-family: "Saira";
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .list_wrap ul li .inner a:hover{color: #fff;}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .list_wrap ul li .inner .right span{
+	color: #999;
+	font-family: "Saira";
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .tags{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 30px;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .tags ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .tags ul li{
+	margin: 0px 1px 5px 0px;
+	display: inline-block;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .tags ul li a{
+	text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+    background-color: rgba(255,255,255,.05);
+    padding: 5px 20px;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-family: "Saira";
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .tags ul li a:hover{
+	background-color: #fff;
+	color: #000000;
+}
+
+/*---------------------------------------------------*/
+/*	11) LEXAL NEWS SINGLE
+/*---------------------------------------------------*/
+
+.lexal_tm_news_single_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.lexal_tm_news_single_wrap .news_content{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.lexal_tm_news_single_wrap .news_content .short_details{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 22px;
+	opacity: 0;
+	position: relative;
+	top: 10px;
+	
+	-webkit-transition: all .7s ease;
+	   -moz-transition: all .7s ease;
+	    -ms-transition: all .7s ease;
+	     -o-transition: all .7s ease;
+	        transition: all .7s ease;
+}
+.lexal_tm_news_single_wrap .news_content.lexal_tm_waypoint_effect.load .short_details{
+	opacity: 1;
+	top: 0px;
+}
+.lexal_tm_news_single_wrap .news_content .short_details ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.lexal_tm_news_single_wrap .news_content .short_details ul li{
+	margin: 0px 20px 0px 0px;
+	float: left;
+}
+.lexal_tm_news_single_wrap .news_content .short_details ul li span{
+	color: #FFFFFF;
+	text-transform: capitalize;
+	display: inline-block;
+	padding-left: 7px;
+	font-size: 12px;
+	font-weight: 600;
+}
+.lexal_tm_news_single_wrap .news_content .short_details ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_news_single_wrap .news_content .short_details ul li a:hover{color: #E9204F;}
+.lexal_tm_news_single_wrap .news_content .short_details ul li .svg{
+	color: #E9204F;
+	position: relative;
+	top: 2px;
+}
+.lexal_tm_news_single_wrap .news_content .desriptions_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom:25px;
+}
+.lexal_tm_news_single_wrap .news_content .desriptions_wrap p{
+	margin-bottom: 13px;
+	color: #999;
+	line-height: 3;
+	opacity: 0;
+	
+	-webkit-transition: all .7s ease;
+	   -moz-transition: all .7s ease;
+	    -ms-transition: all .7s ease;
+	     -o-transition: all .7s ease;
+	        transition: all .7s ease;
+}
+.lexal_tm_news_single_wrap .news_content.lexal_tm_waypoint_effect.load .desriptions_wrap p{
+	opacity: 1;
+	line-height: 2.2;
+}
+.lexal_tm_news_single_wrap .news_content .desriptions_wrap blockquote{
+	margin-bottom: 13px;
+	border-left: 3px solid #E9204F;
+	padding: 10px 0px 10px 20px;
+	font-style: italic;
+}
+.lexal_tm_news_single_wrap .news_content .content_image{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 13px;
+}
+.lexal_tm_news_single_wrap .news_content .content_image ul{
+	margin: 0px 0px 0px -35px;
+	list-style-type: none;
+}
+.lexal_tm_news_single_wrap .news_content .content_image ul li{
+	margin: 0px 0px 25px 0px;
+	width: 50%;
+	padding-left: 35px;
+	float: left;
+}
+.lexal_tm_news_single_wrap .news_content .content_image ul li .inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.lexal_tm_news_single_wrap .news_content .content_image ul li .inner .image_wrap{position: relative;}
+.lexal_tm_news_single_wrap .news_content .content_image ul li .inner .image_wrap .image{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.lexal_tm_news_single_wrap .news_content .content_image ul li .inner .overlay{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgba(0,0,0,.4);
+	z-index: 1;
+}
+.lexal_tm_news_single_wrap .tags{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 40px;
+}
+.lexal_tm_news_single_wrap .tags span{
+	display: inline-block;
+	color: #FFFFFF;
+	padding-right: 30px;
+	font-family: "Saira";
+}
+.lexal_tm_news_single_wrap .tags ul{
+	margin: 0px;
+	list-style-type: none;
+	display: inline;
+}
+.lexal_tm_news_single_wrap .tags ul li{
+	margin: 0px 10px 10px 0px;
+	display: inline-block;
+}
+.lexal_tm_news_single_wrap .tags ul li:last-child{margin-bottom: 0px;}
+.lexal_tm_news_single_wrap .tags ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	display: inline-block;
+	background-color: rgba(255,255,255,.05);
+	padding: 5px 20px;
+	text-transform: capitalize;
+	font-size: 13px;
+	font-family: "Saira";
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_news_single_wrap .tags ul li a:hover{
+	color: #000000;
+	background-color: #fff;
+}
+.lexal_tm_commentbox_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.lexal_tm_commentbox_wrap .inner_wrap{
+	width: 100%;
+	height: auto;
+	background-color: rgba(255,255,255,.05);
+	clear: both;
+	float: left;
+	padding: 50px 0px 41px 0px;
+}
+.lexal_tm_commentbox_wrap .inner_wrap .desriptions_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 0px 40px;
+	margin-bottom: 46px;
+}
+.lexal_tm_commentbox_wrap .title h3{
+	color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.lexal_tm_commentbox_wrap .wp{
+	position: relative;
+	padding-left: 90px;
+}
+.lexal_tm_commentbox_wrap .wp .avatar{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	top: 12px;
+	left: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url(..//img/clients/1.jpg);
+}
+.lexal_tm_commentbox_wrap .wp p{color: #999;}
+.lexal_tm_commentbox_wrap .wp h3 a{
+	color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+.lexal_tm_commentbox_wrap .wp .date{
+	color: #888888;
+	font-size: 13px;
+	margin-bottom: 12px;
+	display: inline-block;
+}
+.lexal_tm_commentbox_wrap .wp .text a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: 600;
+	font-family: "Saira";
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_commentbox_wrap .wp .text a:hover{color: #E9204F;}
+.lexal_tm_commentbox_wrap .reply_comment_wrap{
+	width: 100%;
+	height: 200px;
+	float: left;
+}
+.lexal_tm_commentbox_wrap .reply_comment_wrap .title{
+	color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.lexal_tm_commentbox_wrap .reply_comment_wrap{
+	width: 100%;
+	float: left;
+	height: auto;
+	clear: both;
+	padding: 0px 40px;
+}
+.lexal_tm_commentbox_wrap .reply_comment_wrap .input_list_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.lexal_tm_commentbox_wrap .reply_comment_wrap .input_list_wrap .input_row{
+	width: 100%;
+	clear: both;
+	float: left;
+	margin-bottom: 22px;
+}
+.lexal_tm_commentbox_wrap .reply_comment_wrap .input_list_wrap .input_row input{
+	width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(221,221,221,.3);
+    color: #FFFFFF;
+    padding-left: 0px !important;
+	
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+.lexal_tm_commentbox_wrap .reply_comment_wrap .input_list_wrap .input_row input:focus{
+	outline: none;
+	border-bottom-color: rgba(221,221,221,1.00)
+}
+.lexal_tm_commentbox_wrap .reply_comment_wrap .input_list_wrap .input_row textarea{
+	width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(221,221,221,.3);
+    resize: none;
+    color: #FFFFFF;
+    padding-left: 0px !important;
+    height: 44px;
+    
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+.lexal_tm_commentbox_wrap .reply_comment_wrap .input_list_wrap .input_row textarea:focus{
+	outline: none;
+	border-bottom-color: rgba(221,221,221,1.00);
+}
+
+/*---------------------------------------------------*/
+/*	12) LEXAL PORTFOLIO SINGLE
+/*---------------------------------------------------*/
+
+.lexal_tm_portfolio_single_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.lexal_tm_portfolio_single_wrap .single_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 83px;
+}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	padding-top: 80px;
+}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .leftbox{
+	width: 60%;
+	float: left;
+	padding-right: 50px;
+}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .leftbox p{color: #999;}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .leftbox h3{
+	color: #FFFFFF;
+    text-transform: capitalize;
+    font-size: 21px;
+    position: relative;
+	margin-bottom: 19px;
+	top: 10px;
+	
+	-webkit-transition: all .7s ease;
+	   -moz-transition: all .7s ease;
+	    -ms-transition: all .7s ease;
+	     -o-transition: all .7s ease;
+	        transition: all .7s ease;
+}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .rightbox{
+	width: 40%;
+	float: left;color: #fff;
+	padding-left: 50px;
+}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .rightbox .detail{
+	color: #FFFFFF;
+    text-transform: capitalize;
+    font-size: 21px;
+    position: relative;
+	margin-bottom: 22px;
+	top: 10px;
+}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .rightbox ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .rightbox ul li{
+	margin: 0px 0px 4px 0px;
+	position: relative;
+	padding-left: 25px;
+}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .rightbox ul li:last-child{margin-bottom: 0px;}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .rightbox ul li span{
+	display: inline-block;
+	color: #999;
+}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .rightbox ul li span.first{
+	min-width: 150px;
+	color: #fff;
+	position: relative;
+}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .rightbox ul li .svg{
+	position: absolute;
+	left: 0px;
+	top: 9px;
+	color: #E9204F;
+}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .rightbox ul li span.second a{
+	text-decoration: none;
+	color: #999;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .rightbox ul li span.second a:hover{color: #fff;}
+.lexal_tm_portfolio_single_wrap .extra_images_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 90px;
+}
+.lexal_tm_portfolio_single_wrap .extra_images_list ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.lexal_tm_portfolio_single_wrap .extra_images_list ul li{
+	margin: 0px 0px 50px 0px;
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.lexal_tm_portfolio_single_wrap .extra_images_list ul li:last-child{margin-bottom: 33px;}
+.lexal_tm_portfolio_single_wrap .extra_images_list ul li .overlay{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgba(0,0,0,.5);
+}
+.lexal_tm_pagination_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.lexal_tm_pagination_wrap a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 21px;
+	text-transform: capitalize;
+	font-weight: 600;
+	font-family: "Saira";
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.lexal_tm_pagination_wrap a:hover{color: #E9204F;}
+
+/*---------------------------------------------------*/
+/*	13) LEXAL MEDIA QUERIES (FOR SMALL DEVIVES)
+/*---------------------------------------------------*/
+
+@media (max-width: 1200px) {
+	.lexal_tm_about_wrap{flex-direction: column;}
+	.lexal_tm_about_wrap .img_box{display: none;}
+	.lexal_tm_about_wrap .description_box{width: 100%;padding-left: 0px;}
+	.lexal_tm_about_wrap{margin-bottom: 78px;}
+	.lexal_tm_services ul li{width: 50%;}
+	.lexal_tm_portfolio_list > li{width: 50%;}
+	.lexal_tm_news_wrap ul li{width: 50%;}
+	.lexal_tm_portfolio_single_wrap .single_descriptions_wrap{flex-direction: column;}
+	.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .leftbox{width: 100%;padding-right: 0px;margin-bottom: 30px;}
+	.lexal_tm_portfolio_single_wrap .single_descriptions_wrap .rightbox{width: 100%;padding-left: 0px;}
+	.lexal_tm_flex_box{flex-direction: column;}
+	.lexal_tm_flex_box .flex_left{width: 100%;margin-bottom: 50px;}
+	.lexal_tm_flex_box .flex_right{margin-left: 0px;width: 100%;}
+	.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li .post_image{position: relative;width: 100%;}
+	.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list .overlay_post{display: block;}
+	.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li .title_date{position: absolute;z-index: 4;left: 10px;bottom: 10px;padding-left: 0px;top: auto;}
+	.lexal_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li .title_date h3 a{color: #fff;}
+}
+@media (max-width: 1040px) {
+	.lexal_tm_home_hero .overlay_texts .name{font-size: 45px;}
+	.lexal_tm_contact_wrap{flex-direction: column;}
+	.lexal_tm_contact_wrap .leftpart{padding-right: 0px;width: 100%;margin-bottom: 40px;}
+	.lexal_tm_contact_wrap .rightpart{width: 100%;margin-top: 0px;}
+	.pointer{display: none;}
+}
+@media (max-width: 768px) {
+	.lexal_tm_home_hero .overlay_texts .name{font-size: 40px;}
+	.lexal_tm_home_hero .overlay_texts .subtitle{font-size: 14px;}
+	.lexal_tm_services ul li{width: 100%;}
+	.lexal_tm_portfolio_list > li{width: 100%;}
+	.lexal_tm_news_wrap ul li{width: 100%;}
+	.lexal_tm_contact_wrap .contact_list_wrap .first_row{flex-direction: column;}
+	.lexal_tm_contact_wrap .contact_list_wrap .first_row .first{width: 100%;padding-right: 0px;margin-bottom: 25px;}
+	.lexal_tm_contact_wrap .contact_list_wrap .first_row .second{width: 100%;padding-left: 0px;}
+	.lexal_tm_main_title h3{font-size: 25px;}
+	.lexal_tm_border.left{display: none;}
+	.lexal_tm_border.right{display: none;}
+	.lexal_tm_border.bottom{position: absolute;height: auto;padding: 20px 0px;}
+	.lexal_tm_contact_wrap{margin-bottom: 195px;}
+	.lexal_tm_border.bottom .footer_wrap{flex-direction: column;}
+	.lexal_tm_menu{right: -400px;}
+	.lexal_tm_menu .nav_list{padding-right: 40px;}
+	.lexal_tm_border.top .header_wrap{padding: 0px 20px;}
+	.lexal_tm_home_hero .overlay_texts{padding: 0px 20px;}
+	.lexal_tm_wrap_inner{padding: 0px;}
+	.lexal_tm_services ul li .inner{padding: 40px 30px;}
+	.lexal_tm_news_wrap ul li .inner .descriptions_wrap{padding: 20px 30px 40px 30px;}
+	.lexal_tm_border.bottom .footer_wrap{padding: 0px 20px;}
+	.lexal_tm_news_single_wrap .news_content .content_image ul li{width: 100%;}
+	.lexal_tm_commentbox_wrap .inner_wrap .desriptions_wrap{padding: 0px 20px;}
+	.lexal_tm_commentbox_wrap .wp .avatar{display: none;}
+	.lexal_tm_commentbox_wrap .wp{padding-left: 0px;}
+	.lexal_tm_commentbox_wrap .reply_comment_wrap{padding: 0px 20px;}
+	.lexal_tm_news_single_wrap .tags span{display: none;}
+	.lexal_tm_portfolio_single_wrap .single_inner{margin-bottom: 189px;}
+	.lexal_tm_flex_box{margin-bottom: 206px;}
+}
+@media (max-width: 480px) {
+	.lexal_tm_home_hero .overlay_texts .name{font-size: 25px;}
+	.lexal_tm_home_hero .overlay_texts .subtitle{font-size: 12px;}
+	.lexal_tm_pagination_wrap{flex-direction: column;}
+}	

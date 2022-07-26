@@ -1,0 +1,23 @@
+{
+	"portfolio": [
+		{
+			"title" : "Paper Mockup",
+			"imgUrl": "img/portfolio/7.jpg",
+			"subTitle": "Photography",
+			"pageURL": "portfolio-single-7.html"
+		},
+		{
+			"title": "Two Bags",
+			"imgUrl": "img/portfolio/8.jpg",
+			"subTitle": "Design",
+			"pageURL": "portfolio-single-8.html"
+		},
+		{
+			"title": "Awesome Project",
+			"imgUrl": "img/portfolio/9.jpg",
+			"subTitle": "Development",
+			"pageURL": "portfolio-single-8.html"
+		}
+		
+	]
+}
