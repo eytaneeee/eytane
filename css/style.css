@@ -606,7 +606,11 @@ img.svg{
 	font-size: 22px;
 	margin-bottom: 14px;
 }
-.lexal_tm_services ul li .inner p{color: #999;}
+.lexal_tm_services ul li .inner p{
+	color: #999;
+	text-align: justify;
+
+}
 
 /*---------------------------------------------------*/
 /*	04) LEXAL PROJECTS
@@ -1971,6 +1975,38 @@ img.svg{
 	        transition: all .3s ease;
 }
 .lexal_tm_pagination_wrap a:hover{color: #E9204F;}
+
+.portfolio-title{
+	font-size:130px ;
+	padding-top:60px ;
+}
+.portfolio-gallery {padding-top: em;}
+
+/*---------------------------------------------------*/
+/*	PERSO ADD
+/*---------------------------------------------------*/
+.video-container {
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: #dc0000;
+  padding: 10px;
+}
 
 /*---------------------------------------------------*/
 /*	13) LEXAL MEDIA QUERIES (FOR SMALL DEVIVES)
