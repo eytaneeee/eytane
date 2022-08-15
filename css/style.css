@@ -1083,7 +1083,7 @@ img.svg{
 	background-position: center;
 	background-size: cover;
 	position: relative;
-	background-image: url(..//img/background/1.jpg);
+	background-image: url(..//img/background/1.webp);
 }
 
 /*---------------------------------------------------*/
@@ -1732,7 +1732,7 @@ img.svg{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-image: url(..//img/clients/1.jpg);
+	background-image: url(../img/clients/1.jpg);
 }
 .lexal_tm_commentbox_wrap .wp p{color: #999;}
 .lexal_tm_commentbox_wrap .wp h3 a{
