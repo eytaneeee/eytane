@@ -2008,6 +2008,10 @@ img.svg{
   padding: 10px;
 }
 
+.divider{
+	color: white !important;
+}
+
 /*---------------------------------------------------*/
 /*	13) LEXAL MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
