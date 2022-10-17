@@ -37,7 +37,7 @@ jQuery(document).ready(function(){
 	jQuery(window).load('body', function(){
 		
 		setTimeout(function(){lexal_tm_preloader();},1000);
-		setTimeout(function(){lexal_tm_load();},5000);
+		setTimeout(function(){lexal_tm_load();},4500);
 		
 	});
 	
