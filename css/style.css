@@ -25,10 +25,33 @@
 /*---------------------------------------------------*/
 
 html {
-	overflow-x: hidden;
 	padding: 0px;
-	margin: 0px
+	margin: 0px;
 }
+
+/* width */
+::-webkit-scrollbar {
+	width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: hwb(0 19% 81%);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #e9204f;
+	border-radius: 3px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: rgb(255, 157, 157);
+  }
+
+
+
 body{
 	font-family: "Poppins";
 	font-size: 15px;

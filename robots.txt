@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /css/
+Disallow: /deactivate/
+Disallow: /img/
+Disallow: /js/
+Disallow: /modal/
+Disallow: /portfolio-pages/
+Disallow: /Notes.txt
+Disallow: /CNAME.txt
+
+Sitemap: https://eytane.fr/sitemap.txt

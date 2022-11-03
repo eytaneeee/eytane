@@ -410,7 +410,7 @@ function lexal_tm_preloader(){
     setTimeout(function() {
         $(".lexal_tm_loader-wrapper").fadeOut('fast');
         (mainPreloader).fadeOut('fast');
-    }, 4500);
+    }, 550);
 }
 
 // -----------------------------------------------------
@@ -523,7 +523,7 @@ function lexal_tm_animate_text(){
 		animateSpan.typed({
 			strings: ["3D/VFX Artist", "Photographer", "Designer", "Video/Photo Editor"],
 			loop: true,
-			startDelay: 1e3,
+			startDelay: 3500,
 			backDelay: 2e3
 		});
 }
