@@ -7,5 +7,6 @@ Disallow: /modal/
 Disallow: /portfolio-pages/
 Disallow: /Notes.txt
 Disallow: /CNAME.txt
+Disallow: /docs/
 
 Sitemap: https://eytane.fr/sitemap.txt
