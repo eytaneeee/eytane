@@ -8,5 +8,6 @@ Disallow: /portfolio-pages/
 Disallow: /Notes.txt
 Disallow: /CNAME.txt
 Disallow: /docs/
+Disallow: /404.html
 
 Sitemap: https://eytane.fr/sitemap.txt
