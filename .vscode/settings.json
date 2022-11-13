@@ -1,3 +1,4 @@
 {
-    "inline-bookmarks.view.showVisibleFilesOnly": false
+    "inline-bookmarks.view.showVisibleFilesOnly": false,
+    "liveServer.settings.port": 5501
 }
