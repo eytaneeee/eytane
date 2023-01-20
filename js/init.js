@@ -527,3 +527,65 @@ function lexal_tm_animate_text(){
 			backDelay: 2e3
 		});
 }
+
+// -------------------------------------------------
+// -------------   MINE CUSTOM   -------------------
+// -------------------------------------------------
+function hide(obj) {
+
+    var el = document.getElementById(obj);
+
+        el.style.display = 'none';
+
+}
+
+setTimeout(() => {
+	const box = document.getElementById('hide_on_click');
+  
+	// 👇️ removes element from DOM
+	box.style.display = 'none';
+  
+	// 👇️ hides element (still takes up space on page)
+	// box.style.visibility = 'hidden';
+  }, 3000); // 👈️ time in milliseconds
+
+  
+  let changeElement = document.getElementById("change");
+  let currentStyle = 0;
+  
+  function changeStyle() {
+	  if (currentStyle === 0) {
+		  changeElement.style.cssText = "opacity: 1;";
+		  currentStyle = 1;
+	  } else {
+		  changeElement.style.cssText = "opacity: 0;";
+		  currentStyle = 0;
+	  }
+  }
+  
+  function stop2() {
+	clearInterval(int2);
+  }
+	var int2 = setInterval(changeStyle, 1800);
+	setTimeout(function() { stop2(); }, 8000);
+  
+
+  let changeElement2 = document.getElementById("change_txt");
+  let currentStyle2 = 0;
+  
+  function changeStyle2() {
+	  if (currentStyle2 === 0) {
+		  changeElement2.style.cssText = "opacity: 1;";
+		  currentStyle2 = 1;
+	  } else {
+		  changeElement2.style.cssText = "opacity: 0;";
+		  currentStyle2 = 0;
+	  }
+  }
+  
+//   setInterval(changeStyle2, 1800);
+function stop() {
+  clearInterval(int);
+}
+  var int = setInterval(changeStyle2, 1800);
+  setTimeout(function() { stop(); }, 8000);

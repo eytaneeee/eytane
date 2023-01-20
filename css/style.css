@@ -586,7 +586,7 @@ img.svg{
 	padding: 50px 40px;
 	border-radius: 3px;
 	overflow: hidden;
-	cursor: pointer;
+	cursor: default;
 }
 .lexal_tm_services ul li .inner:before{
 	position: absolute;
@@ -2034,6 +2034,7 @@ img.svg{
 .divider{
 	color: white !important;
 }
+
 
 /*---------------------------------------------------*/
 /*	13) LEXAL MEDIA QUERIES (FOR SMALL DEVIVES)
