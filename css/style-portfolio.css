@@ -2002,6 +2002,8 @@ img.svg{
   color: #dc0000;
   padding: 10px;
 }
+
+.lexal_tm_portfolio_list .list_inner .overlay_text h3{text-decoration: underline;}
 /*---------------------------------------------------*/
 /*	13) LEXAL MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
