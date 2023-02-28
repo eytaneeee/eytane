@@ -9,5 +9,7 @@ Disallow: /Notes.txt
 Disallow: /CNAME.txt
 Disallow: /docs/
 Disallow: /404.html
+Disallow: /candidate/
+Disallow: /.vscode
 
 Sitemap: https://eytane.fr/sitemap.txt
