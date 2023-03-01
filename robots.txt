@@ -11,5 +11,6 @@ Disallow: /docs/
 Disallow: /404.html
 Disallow: /candidate/
 Disallow: /.vscode
+Disallow: /news/
 
 Sitemap: https://eytane.fr/sitemap.txt

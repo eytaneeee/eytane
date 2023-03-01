@@ -1144,14 +1144,10 @@ img.svg{
 	margin-bottom: 100px;
 }
 .lexal_tm_flex_box .flex_left{
-	width: 72%;
+	width: 100%;
 	height: auto;
 }
-.lexal_tm_flex_box .flex_right{
-	width: 28%;
-	height: auto;
-	margin-left: 50px;
-}
+
 .lexal_tm_news_list_wrap{
 	width: 100%;
 	height: auto;
