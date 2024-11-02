@@ -521,7 +521,7 @@ function lexal_tm_animate_text(){
 	var animateSpan			= jQuery('.lexal_tm_animation_text_word');
 	
 		animateSpan.typed({
-			strings: ["3D/VFX Artist", "Photographer", "Designer", "Video/Photo Editor"],
+			strings: ["CG Generalist", "Student At ArtFx", "Aspiring Flame Artist", "Comp Artist"],
 			loop: true,
 			startDelay: 3500,
 			backDelay: 2e3
@@ -589,3 +589,26 @@ function stop() {
 }
   var int = setInterval(changeStyle2, 1800);
   setTimeout(function() { stop(); }, 8000);
+
+
+//function scroll auto
+function simulateWheelClickAfterDelay(seconds) {
+	// Block scrolling
+	document.body.style.overflow = 'hidden';
+
+	// Set a timeout to allow scrolling after the specified time
+	setTimeout(() => {
+		// Enable scrolling again
+		document.body.style.overflow = '';
+
+		// Simulate a click on the wheel button to scroll to the #about section
+		const wheelButton = document.querySelector('.lexal_tm_down a');
+		if (wheelButton) {
+			wheelButton.click();
+		}
+	}, seconds * 1000);
+}
+
+// Call the function with the delay in seconds
+//simulateWheelClickAfterDelay(7); // Change '3' to any number of seconds you prefer
+
