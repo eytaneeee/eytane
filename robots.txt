@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /css/
 Disallow: /deactivate/
 Disallow: /img/
+Disallow: /img.a/
 Disallow: /js/
 Disallow: /modal/
 Disallow: /portfolio-pages/
@@ -9,6 +10,7 @@ Disallow: /Notes.txt
 Disallow: /CNAME.txt
 Disallow: /docs/
 Disallow: /404.html
+Disallow: /demo_stripped.html
 Disallow: /candidate/
 Disallow: /.vscode
 Disallow: /news/
